@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="r-p-s.css">
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="rock-button-container">
+            <button onclick="
+                const rockButton= Math.random()
+                let computerMove = ``;
+                let result = ``;
+
+                if(rockButton >= 0 && rockButton < 0.333) {
+                    computerMove = `Rock`; alert(`You picked Rock, Computer picked ${computerMove}`, You)}
+                else if (rockButton > 0.3333 && rockButton <= 0.6666){
+                    computerMove = `Paper`}
+                else if (rockButton > 0.6666 && rockButton < 1){computerMove =`Scissors`}
+
+                if (computerMove === `rock` ){ result = `Tie`}
+                else if (computerMove === `paper`){ result = `Lose`}
+                else if (computerMove === `scissors`){ result = `Win`};
+
+                alert(`You picked Rock, Computer picked ${computerMove}, You ${result}`)
+
+                "> Rock</button>
+        </div>
+        <div class="paper-button-container">
+            <button onclick="
+                
+                const paperButton= Math.random()
+                if(paperButton >= 0 && paperButton < 0.3333) {computerMove =(`Rock`)}
+                else if (paperButton >= 0.3333 && paperButton< 0.6666){computerMove =(`Paper`)}
+                else if (paperButton >= 0.6666 && paperButton < 1){computerMove =(`Scissors`)}
+                ">Paper</button>
+        </div>
+        <div class="scissors-button-container">
+            <button onclick="
+                const scissorsButton= Math.random()
+                if(scissorsButton >= 0 && scissorsButton <= 0.3333) {computerMove =(`Rock`)}
+                else if (scissorsButton >= 0.3333 && scissorsButton< 0.6666){computerMove =(`Paper`)}
+                else if (scissorsButton >= 0.6666 && scissorsButton < 1){computerMove =(`Scissors`)}
+                ">Scissors</button>
+        </div>
+    </div>
+    <script src="r-p-s.js"></script>
+</body>
+</html>
